@@ -11,7 +11,9 @@ app.use(cors());
 
 
 // TODO 5: Create the home route "/"
-
+app.listen(3000, () => {
+  console.log("Server running on http://localhost:3000");
+});
 
 
 // TODO 6: Create the "/about" route
