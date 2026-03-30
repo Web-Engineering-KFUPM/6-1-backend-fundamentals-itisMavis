@@ -11,8 +11,8 @@ app.use(cors());
 
 
 // TODO 5: Create the home route "/"
-app.listen(3000, () => {
-  console.log("Server running on http://localhost:3000");
+app.get('/', (req, res) => {
+  res.send('Hello from the back-end server');
 });
 
 
@@ -25,3 +25,6 @@ app.listen(3000, () => {
 
 
 // TODO 4: Start the server on port 3000
+app.listen(3000, () => {
+  console.log("Server running on http://localhost:3000");
+});
